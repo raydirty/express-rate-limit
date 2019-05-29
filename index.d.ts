@@ -27,6 +27,4 @@ export interface Store {
     incr(key: string | any, cb: (err?: Error, hits?: number) => void): void;
 }
 
-declare function RateLimit(options?: Options): (req: Request, res: Response, next: NextFunction) => void;
-
-export = RateLimit;
+export declare function RateLimit(options?: Options): (req: Request, res: Response, next: NextFunction) => void;
